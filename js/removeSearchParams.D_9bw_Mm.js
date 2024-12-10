@@ -1,0 +1,1 @@
+const o=(e,n,a=!1)=>{const[,,...s]=e.pathname.split("/"),t=`/${[n,...s].join("/")}`;if(!a)return`${t}${e.search}`;const r=new URL(e.toString());return r.pathname=t,r.toString()},c=e=>{const n=new URL(e);return n.search="",n};export{c as a,o as r};
